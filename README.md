@@ -1,7 +1,7 @@
 #	CONKY (LINUX for Pen_ters and Admin_rs)
 
 #####	Sergio's P.
-![GitHub Logo](screenshot1.png)
+![img](screenshot1.png)
 Format: ![Alt Text](url)
 
 #	Conky distibutive
