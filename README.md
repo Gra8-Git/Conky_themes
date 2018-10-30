@@ -1,6 +1,8 @@
 #CONKY (LINUX for Pen_ters and Admin_rs)
 #Sergio's P.
-<img src="screenshot1.png" alt="drawing" width="200" height="600"/>
+
+<img src="screenshot1.png" alt="drawing" width="480" height="1024"/>
+
 #	Conky distibutive
 
 		-Its program to show on desktop usfull information about
