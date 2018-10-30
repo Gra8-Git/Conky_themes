@@ -1,7 +1,7 @@
 #CONKY (LINUX for Pen_ters and Admin_rs)
 #Sergio's P.
 
-<img src="screenshot1.png" alt="drawing" width="480" height="1024"/>
+<img src="screenshot1.png" alt="drawing" width="1024" height="480"/>
 
 #	Conky distibutive
 
