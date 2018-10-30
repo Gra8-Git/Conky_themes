@@ -1,15 +1,15 @@
 #	CONKY (LINUX for Pen_ters and Admin_rs)
-#####Sergio's P.
+##### Sergio's P.
 ![GitHub img](screenshot1.png)
-Format: ![Alt Text](url)
 
 
-#####	Conky distibutive
+
+##### Conky distibutive
 
 		-Its program to show on desktop usfull information about
 		software, hardware, network. Most useful for Pen_trs 
 		and Admin_rs is's network tools.
-#####	Install Conky	
+##### Install Conky	
 
 		-To install conky on Linux machine you need write command:
 		Ubuntu, Kali, Debian and so on.,
@@ -19,7 +19,7 @@ Format: ![Alt Text](url)
 		Fedora, Red_Hat.,
 			yum install conky conky-all
 
-#####	File conky.conf
+##### File conky.conf
 		
 		Most information about how to edit and use conky.conf file 
 		you can search in Internet.  
@@ -27,7 +27,7 @@ Format: ![Alt Text](url)
 		your conky on the Desktop. Code of my conky.conf file in
 		repository.				
 	
-#####	Conky on Startup of machine
+##### Conky on Startup of machine
 		
 		-By my experiance I made it on the way of terminal profile.
 		In the menu of Terminal->Edit->Preferences
