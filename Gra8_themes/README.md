@@ -2,10 +2,7 @@
 ##### Sergio's P.
 ![GitHub img](screenshot1.png)
 
-<html>
-<p style="background-color:powderblue;">
-electricity it's or 1 or 0 frequense </p>
-</html>
+
 
 ##### Conky distibutive
 
