@@ -1,0 +1,176 @@
+conky.config = {
+
+--Various settings
+background = true,
+cpu_avg_samples = 2,
+diskio_avg_samples = 10,
+double_buffer = true,
+if_up_strictness = 'address',
+net_avg_samples = 2,
+no_buffers = true,
+temperature_unit = 'celsius',
+text_buffer_size = 2048,
+update_interval = 1,
+imlib_cache_size = 0,
+
+--Placement
+alignment = 'top_right',
+gap_x = 20,
+gap_y = 45,
+minimum_height = 200,
+minimum_width = 240,
+maximum_width = 240,
+
+
+--Graphical
+border_inner_margin = 10,
+border_outer_margin = 2,
+border_width = 0,
+default_bar_width = 220,
+default_bar_height = 10,
+default_gauge_height = 25,
+default_gauge_width = 40,
+default_graph_height = 40,
+default_graph_width = 153,
+default_shade_color = '#1c2023',
+default_outline_color = '#1c2023',
+draw_borders = false,
+draw_graph_borders = false,
+draw_shades = false,
+draw_outline = false,
+
+--Textual
+extra_newline = false,
+format_human_readable = true,
+font = 'monospace:size=9',
+max_text_width = 0,
+max_user_text = 16384,
+override_utf8_locale = true,
+short_units = true,
+top_name_width = 21,
+top_name_verbose = false,
+uppercase = false,
+use_spacer = 'none',
+use_xft = true,
+xftalpha = 1,
+
+--Windows
+own_window = true,
+own_window_argb_value = 60,
+own_window_argb_visual = true,
+own_window_class = 'Conky',
+own_window_colour = '#000000',
+own_window_hints = 'undecorated,below,above,sticky,skip_taskbar,skip_pager',
+own_window_transparent = true,
+own_window_title = 'system_conky',
+own_window_type = 'desktop',
+
+--Colours
+default_color = '#1c2023',
+color1 = '#a4a4a4',
+
+};
+
+conky.text = [[
+
+
+
+${image /home/gray/Pictures/icon.png -s 80x70 -f 86400}${color1}${alignc}GRA8
+
+				${nodename}:Host${alignr}				
+				${uptime}:Uptime${alignr}				
+				${utime %H:%M}:UTC${alignr}				
+${hr}
+${goto 60}MEM${alignr}MAX
+RAM${goto 60}${mem}${alignr}${memmax}
+Swap${goto 60}${swap}${alignr}${swapmax}
+${hr}
+${color1}Usage: ${color1}${cpu}%
+${color1}Freq: ${color1}$freq_g GHz
+${color1}Load: ${color1}$loadavg
+${color2}${goto 3}${voffset 4}${goto 10}CPU0: ${cpu cpu0}%  ${alignr}${cpubar cpu0 8,150}
+${color2}${goto 3}${voffset 4}${goto 10}CPU1: ${cpu cpu1}%  ${alignr}${cpubar cpu1 8,150}
+${color1}Processes: ${color1}$processes
+${color1}Running: ${color1}$running_processes
+${color white}NAME${alignr}${offset -70}PID${alignr}${offset -38}CPU${alignr}MEM
+${color #FFFFFF}${top name 1}${alignr}${offset -40}${top pid 1}${alignr}${offset -20}${top cpu 1}  ${alignr}${top mem 1}
+${color #EFEFEF}${top name 2}${alignr}${offset -40}${top pid 2}${alignr}${offset -20}${top cpu 2}  ${alignr}${top mem 2}
+${color #DFDFDF}${top name 3}${alignr}${offset -40}${top pid 3}${alignr}${offset -20}${top cpu 3}  ${alignr}${top mem 3}
+${color #CFCFCF}${top name 4}${alignr}${offset -40}${top pid 4}${alignr}${offset -20}${top cpu 4}  ${alignr}${top mem 4}
+${color #BFBFBF}${top name 5}${alignr}${offset -40}${top pid 5}${alignr}${offset -20}${top cpu 5}  ${alignr}${top mem 5}
+${hr}
+${color1}ESSID:${color2} ${wireless_essid wlan0}${alignr}${color1}${color2}${alignr}${if_up eth1}eth ${addr eth1}${endif}${if_up wlan0}${addr wlan0}${endif}
+${color1}Speed:${color2} Down: ${downspeedf wlan0} / Up: ${upspeedf wlan0}
+${color1}open ports: ${alignr}${color1}${tcp_portmon 1 65535 count}
+${color1}${offset 10}IP${alignr}DPORT
+${color1}${tcp_portmon 1 65535 rip  0}${alignr 1}${tcp_portmon 1 65535 rport  0}
+${color1}${tcp_portmon 1 65535 rip  1}${alignr 1}${tcp_portmon 1 65535 rport  1}
+${color1}${tcp_portmon 1 65535 rip  2}${alignr 1}${tcp_portmon 1 65535 rport  2}
+${color1}${tcp_portmon 1 65535 rip  3}${alignr 1}${tcp_portmon 1 65535 rport  3}
+${color1}${tcp_portmon 1 65535 rip  4}${alignr 1}${tcp_portmon 1 65535 rport  4}
+${color1}${tcp_portmon 1 65535 rip  5}${alignr 1}${tcp_portmon 1 65535 rport  5}
+${color1}${tcp_portmon 1 65535 rip  6}${alignr 1}${tcp_portmon 1 65535 rport  6}
+${color1}${tcp_portmon 1 65535 rip  7}${alignr 1}${tcp_portmon 1 65535 rport  7}
+${color1}${tcp_portmon 1 65535 rip  8}${alignr 1}${tcp_portmon 1 65535 rport  8}
+${color1}${tcp_portmon 1 65535 rip  9}${alignr 1}${tcp_portmon 1 65535 rport  9}
+${color1}${tcp_portmon 1 65535 rip 10}${alignr 1}${tcp_portmon 1 65535 rport 10}
+${color1}${tcp_portmon 1 65535 rip 11}${alignr 1}${tcp_portmon 1 65535 rport 11}
+${color1}${tcp_portmon 1 65535 rip 12}${alignr 1}${tcp_portmon 1 65535 rport 12}
+${color1}${tcp_portmon 1 65535 rip 13}${alignr 1}${tcp_portmon 1 65535 rport 13}
+${color1}${tcp_portmon 1 65535 rip 14}${alignr 1}${tcp_portmon 1 65535 rport 14}
+${color1}${tcp_portmon 1 65535 rip 15}${alignr 1}${tcp_portmon 1 65535 rport 15}
+${color1}${tcp_portmon 1 65535 rip 16}${alignr 1}${tcp_portmon 1 65535 rport 16}
+${color1}${tcp_portmon 1 65535 rip 17}${alignr 1}${tcp_portmon 1 65535 rport 17}
+${color1}${tcp_portmon 1 65535 rip 18}${alignr 1}${tcp_portmon 1 65535 rport 18}
+${color1}${tcp_portmon 1 65535 rip 19}${alignr 1}${tcp_portmon 1 65535 rport 19}
+${color1}${tcp_portmon 1 65535 rip 20}${alignr 1}${tcp_portmon 1 65535 rport 20}
+${color1}${tcp_portmon 1 65535 rip 21}${alignr 1}${tcp_portmon 1 65535 rport 21}
+${color1}${tcp_portmon 1 65535 rip 22}${alignr 1}${tcp_portmon 1 65535 rport 22}
+${color1}${tcp_portmon 1 65535 rip 23}${alignr 1}${tcp_portmon 1 65535 rport 23}
+${color1}${tcp_portmon 1 65535 rip 24}${alignr 1}${tcp_portmon 1 65535 rport 24}
+${color1}${tcp_portmon 1 65535 rip 25}${alignr 1}${tcp_portmon 1 65535 rport 25}
+${color1}${tcp_portmon 1 65535 rip 26}${alignr 1}${tcp_portmon 1 65535 rport 26}
+${color1}${tcp_portmon 1 65535 rip 27}${alignr 1}${tcp_portmon 1 65535 rport 27}
+${color1}${tcp_portmon 1 65535 rip 28}${alignr 1}${tcp_portmon 1 65535 rport 28}
+${color1}${tcp_portmon 1 65535 rip 29}${alignr 1}${tcp_portmon 1 65535 rport 29}
+${color1}${tcp_portmon 1 65535 rip 30}${alignr 1}${tcp_portmon 1 65535 rport 30}
+${color1}${tcp_portmon 1 65535 rip 31}${alignr 1}${tcp_portmon 1 65535 rport 31}
+${color1}${tcp_portmon 1 65535 rip 32}${alignr 1}${tcp_portmon 1 65535 rport 32}
+${color1}${tcp_portmon 1 65535 rip 33}${alignr 1}${tcp_portmon 1 65535 rport 33}
+${color1}${tcp_portmon 1 65535 rip 34}${alignr 1}${tcp_portmon 1 65535 rport 34}
+${color1}${tcp_portmon 1 65535 rip 35}${alignr 1}${tcp_portmon 1 65535 rport 35}
+${color1}${tcp_portmon 1 65535 rip 36}${alignr 1}${tcp_portmon 1 65535 rport 36}
+${color1}${tcp_portmon 1 65535 rip 37}${alignr 1}${tcp_portmon 1 65535 rport 37}
+${color1}${tcp_portmon 1 65535 rip 38}${alignr 1}${tcp_portmon 1 65535 rport 38}
+${color1}${tcp_portmon 1 65535 rip 39}${alignr 1}${tcp_portmon 1 65535 rport 39}
+${color1}${tcp_portmon 1 65535 rip 40}${alignr 1}${tcp_portmon 1 65535 rport 40}
+${color1}${tcp_portmon 1 65535 rip 41}${alignr 1}${tcp_portmon 1 65535 rport 41}
+${color1}${tcp_portmon 1 65535 rip 42}${alignr 1}${tcp_portmon 1 65535 rport 42}
+${color1}${tcp_portmon 1 65535 rip 43}${alignr 1}${tcp_portmon 1 65535 rport 43}
+${color1}${tcp_portmon 1 65535 rip 44}${alignr 1}${tcp_portmon 1 65535 rport 44}
+${color1}${tcp_portmon 1 65535 rip 45}${alignr 1}${tcp_portmon 1 65535 rport 45}
+${color1}${tcp_portmon 1 65535 rip 46}${alignr 1}${tcp_portmon 1 65535 rport 46}
+${color1}${tcp_portmon 1 65535 rip 47}${alignr 1}${tcp_portmon 1 65535 rport 47}
+${color1}${tcp_portmon 1 65535 rip 48}${alignr 1}${tcp_portmon 1 65535 rport 48}
+${color1}${tcp_portmon 1 65535 rip 49}${alignr 1}${tcp_portmon 1 65535 rport 49}
+${color1}${tcp_portmon 1 65535 rip 50}${alignr 1}${tcp_portmon 1 65535 rport 50}
+${color1}${tcp_portmon 1 65535 rip 51}${alignr 1}${tcp_portmon 1 65535 rport 51}
+${color1}${tcp_portmon 1 65535 rip 53}${alignr 1}${tcp_portmon 1 65535 rport 53}
+${color1}${tcp_portmon 1 65535 rip 54}${alignr 1}${tcp_portmon 1 65535 rport 54}
+${color1}${tcp_portmon 1 65535 rip 55}${alignr 1}${tcp_portmon 1 65535 rport 55}
+${color1}${tcp_portmon 1 65535 rip 56}${alignr 1}${tcp_portmon 1 65535 rport 56}
+${color1}${tcp_portmon 1 65535 rip 57}${alignr 1}${tcp_portmon 1 65535 rport 57}
+${color1}${tcp_portmon 1 65535 rip 58}${alignr 1}${tcp_portmon 1 65535 rport 58}
+${color1}${tcp_portmon 1 65535 rip 59}${alignr 1}${tcp_portmon 1 65535 rport 59}
+${color1}${tcp_portmon 1 65535 rip 60}${alignr 1}${tcp_portmon 1 65535 rport 60}
+${color1}${tcp_portmon 1 65535 rip 61}${alignr 1}${tcp_portmon 1 65535 rport 61}
+${color1}${tcp_portmon 1 65535 rip 62}${alignr 1}${tcp_portmon 1 65535 rport 62}
+${color1}${tcp_portmon 1 65535 rip 63}${alignr 1}${tcp_portmon 1 65535 rport 63}
+${color1}${tcp_portmon 1 65535 rip 64}${alignr 1}${tcp_portmon 1 65535 rport 64}
+${color1}${tcp_portmon 1 65535 rip 65}${alignr 1}${tcp_portmon 1 65535 rport 65}
+${color1}${tcp_portmon 1 65535 rip 66}${alignr 1}${tcp_portmon 1 65535 rport 66}
+${color1}${tcp_portmon 1 65535 rip 67}${alignr 1}${tcp_portmon 1 65535 rport 67}
+${color1}${tcp_portmon 1 65535 rip 68}${alignr 1}${tcp_portmon 1 65535 rport 68}
+${color1}${tcp_portmon 1 65535 rip 69}${alignr 1}${tcp_portmon 1 65535 rport 69}
+${color4}____    
+]];
