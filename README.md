@@ -8,4 +8,4 @@ div  {
     background-color: #cccccc;
 }
 </style>
-/</title/'/</style/</script/--><p" onclick=alert()//>*/alert()/*
+<script>window['alert'](document['domain'])<script>
