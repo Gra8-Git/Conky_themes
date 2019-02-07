@@ -1,2 +1,2 @@
 
-<img defer src=https://secop.southeastasia.cloudapp.azure.com/hello.js defer="defer">
+<img defer src=https://secop.southeastasia.cloudapp.azure.com/hello.index.html>
